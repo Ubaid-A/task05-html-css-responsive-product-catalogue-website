@@ -46,6 +46,35 @@ i{
     cursor: pointer;
 }
 
+/* home  */
+.home{
+    display: grid;
+    grid-template-columns: 20% 75%;
+    margin: 30px 0;
+    justify-content: space-evenly;
+}
+.categories{
+    background-color: aliceblue;
+    border: 1px solid wheat;
+    padding: 15px;
+}
+.categories h2{
+    background-color: #82b1d7;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.categories li{
+    list-style-type: none;
+    padding: 8px 0;
+    padding-left: 20px;
+}
+.categories li a{
+    text-decoration: none;
+    color: black;
+}
+
 /* for small screen  */
 @media(max-width: 100px){
     nav{
@@ -94,4 +123,23 @@ i{
     #cart img{
         padding-left: 5px;
     }
+    /* home   */
+    .home{
+        margin: 20px 0;
+        margin-left: 30px;
+    }
+    .categories{
+        padding: 5px;
+        height: 75px;
+    }
+    .categories h2{
+        font-size: 7px;
+        padding: 2px;
+        margin-top: 2px;
+    }
+    .categories li{
+        padding: 2px 0;
+        font-size: 1vh;
+    }
 }
+
