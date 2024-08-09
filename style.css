@@ -182,6 +182,38 @@ i{
     padding-bottom: 15px;
 }
 
+#watches-heading{
+    margin-top: 80px;
+    margin-left: 10px;
+    padding: 10px 20px;
+}
+.smart-watches{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+}
+.smart-watches div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #91b9d3;
+    width: 400px;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 10px 58px;
+    box-shadow: rgba(0, 0, 0, 0.43) 0px 5px 10px;
+
+}
+.smart-watches div img{
+    width: 200px;
+    height: 190px;
+}
+.smart-watches p{
+    font-weight: bold;
+    font-size: 18px;
+    color: #095384;
+}
+
 
 /* for small screen  */
 @media(max-width: 1000px){
@@ -251,6 +283,24 @@ i{
         margin: 10px;
         margin-bottom: 5px;
         background-color: transparent;
+    }
+
+    .smart-watches{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-around;
+    }
+    .smart-watches div{
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        height: 85%;
+        padding: 10px 10px;
+    }
+    .smart-watches div img{
+        text-align: center;
+        font-size: 15px;
     }
 
 }
@@ -349,6 +399,35 @@ i{
         font-size: 2vh;
         padding-top: 3px;
         padding-bottom: 10px;
+    }
+
+    /* smarts watchs  */
+    #watches-heading{
+        margin-top: 30px;
+        margin-bottom: 0px;
+        padding: 20px 20px;
+        font-size: 2.5vh;
+    }
+    .smart-watches{
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: space-around;
+    }
+    .smart-watches div{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 260px;
+        height: 250px;
+        margin-bottom: 10px;
+        padding: 0 10px;
+    }
+    .smart-watches div img{
+        width: 150px;
+        height: 150px;
+    }
+    .smart-watches div p{
+        font-size: 2vh;
     }
     
 }
