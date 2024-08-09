@@ -74,6 +74,13 @@ i{
     text-decoration: none;
     color: black;
 }
+.categories li:hover{
+    background-color: #82b1d7;
+    color: white;
+}
+.categories li a:hover{
+    color: white;
+}
 
 /* background-img  */
 
@@ -95,8 +102,44 @@ i{
     font-size: 28px;
 }
 
+/* smart phones  */
+#mob-headinng{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.mobiles{
+    display: grid;
+    grid-template-columns:  14% 14% 14% 14% 14% 14% ;
+    justify-content: space-around;
+}
+.mobiles div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    border: 1px solid gainsboro;
+    text-align: center;
+    margin: 10px 0;
+}
+.mobiles div img{
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: transparent;
+}
+.mobiles span p{
+    padding: 3px;
+    font-size: small;
+}
+.mobiles span p:first-child{
+    font-weight: bold;
+}
+
 /* for small screen  */
-@media(max-width: 100px){
+@media(max-width: 1000px){
     nav{
         height: 88px;
     }
@@ -122,7 +165,34 @@ i{
     .background-img img{
         width: 60%;
     }
+
+    /* mobile ? */
+    #mob-headinng{
+        margin-top: 88px;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+    }
+    .mobiles{
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-around;
+    }
+    .mobiles div{
+        margin: 30px 0;
+        height: 100%;
+        margin-bottom: 0px;
+        border: 10px solid #a9c7e0;
+    }
+    .mobiles div img{
+        height: 88%;
+        width: 90%;
+    }
+    .mobiles span p{
+        font-size: medium;
+    }
+
 }
+
+
 @media(max-width: 400px){
     nav{
         height: 60px;
@@ -178,6 +248,18 @@ i{
     }
     .background-img img{
         width: 60%;
+    }
+
+    /* mobiles ? */
+    #mob-headinng{
+        margin-top: 30px;
+        margin-bottom: 0px;
+        padding: 0px 20px;
+        font-size: 2.5vh;
+    }
+    .mobiles{
+        grid-template-columns: 50% 50%;
+        justify-content: space-around;
     }
     
 }
